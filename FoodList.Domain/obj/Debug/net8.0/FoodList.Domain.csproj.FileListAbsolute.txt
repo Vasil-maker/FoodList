@@ -1,0 +1,11 @@
+D:\C# Programing\Projects_On_ASP\ListPetProj\FoodList\FoodList\FoodList.Domain\bin\Debug\net8.0\FoodList.Domain.deps.json
+D:\C# Programing\Projects_On_ASP\ListPetProj\FoodList\FoodList\FoodList.Domain\bin\Debug\net8.0\FoodList.Domain.dll
+D:\C# Programing\Projects_On_ASP\ListPetProj\FoodList\FoodList\FoodList.Domain\bin\Debug\net8.0\FoodList.Domain.pdb
+D:\C# Programing\Projects_On_ASP\ListPetProj\FoodList\FoodList\FoodList.Domain\obj\Debug\net8.0\FoodList.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\C# Programing\Projects_On_ASP\ListPetProj\FoodList\FoodList\FoodList.Domain\obj\Debug\net8.0\FoodList.Domain.AssemblyInfoInputs.cache
+D:\C# Programing\Projects_On_ASP\ListPetProj\FoodList\FoodList\FoodList.Domain\obj\Debug\net8.0\FoodList.Domain.AssemblyInfo.cs
+D:\C# Programing\Projects_On_ASP\ListPetProj\FoodList\FoodList\FoodList.Domain\obj\Debug\net8.0\FoodList.Domain.csproj.CoreCompileInputs.cache
+D:\C# Programing\Projects_On_ASP\ListPetProj\FoodList\FoodList\FoodList.Domain\obj\Debug\net8.0\FoodList.Domain.dll
+D:\C# Programing\Projects_On_ASP\ListPetProj\FoodList\FoodList\FoodList.Domain\obj\Debug\net8.0\refint\FoodList.Domain.dll
+D:\C# Programing\Projects_On_ASP\ListPetProj\FoodList\FoodList\FoodList.Domain\obj\Debug\net8.0\FoodList.Domain.pdb
+D:\C# Programing\Projects_On_ASP\ListPetProj\FoodList\FoodList\FoodList.Domain\obj\Debug\net8.0\ref\FoodList.Domain.dll

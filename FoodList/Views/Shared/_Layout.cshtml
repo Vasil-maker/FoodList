@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100"> 
+    <header class="bg-blue-500 text-white p-4">
+        <h1 class="text-2xl font-semibold">Дневник питания</h1>
+    </header>
+
+    <div class="container mx-auto flex p-4">
+        <!-- Основной контент страницы -->
+        <div class="w-3/4 p-4">
+            @RenderBody()
+        </div>
+
+        <!-- Боковое меню (показывается, если страница его определила) -->
+        @RenderSection("Sidebar", required: false)
+    </div>
+
+    <footer class="bg-gray-800 text-white text-center p-2 mt-4">
+        <p>© 2025 Дневник питания</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let form = document.getElementById("addProductForm");
+            if (form) {
+                form.addEventListener("submit", async function (event) {
+                    event.preventDefault(); // Останавливаем стандартное поведение формы
+
+                    let formData = new FormData(this);
+
+                    let response = await fetch("/FoodCul/Create", {
+                        method: "POST",
+                        body: formData
+                    });
+
+                    if (!response.ok) {
+                        Swal.fire({
+                            icon: "error",
+                            title: "Ошибка сети!",
+                            text: "Не удалось отправить данные",
+                            confirmButtonText: "Окей"
+                        });
+                        return;
+                    }
+
+                    let data = await response.json();
+
+                    if (data.statusCode === 1) {
+                        Swal.fire({
+                            icon: "error",
+                            title: "Ошибка!",
+                            text: data.description,
+                            confirmButtonText: "Окей"
+                        });
+                    } else if (data.statusCode === 0) {
+                        Swal.fire({
+                            icon: "success",
+                            title: "Успешно!",
+                            text: data.description,
+                            confirmButtonText: "Отлично!"
+                        }).then(() => {
+                            location.reload();
+                        });
+                    } else {
+                        Swal.fire({
+                            icon: "warning",
+                            title: "Ошибка!",
+                            text: "Произошла неизвестная ошибка",
+                            confirmButtonText: "Окей"
+                        });
+                    }
+                });
+            }
+        });
+    </script>
+
+
+
+</body>
+</html>

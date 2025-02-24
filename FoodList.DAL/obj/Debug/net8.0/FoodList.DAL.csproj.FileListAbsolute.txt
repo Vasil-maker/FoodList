@@ -1,0 +1,17 @@
+D:\C# Programing\Projects_On_ASP\ListPetProj\FoodList\FoodList\FoodList.DAL\bin\Debug\net8.0\FoodList.DAL.deps.json
+D:\C# Programing\Projects_On_ASP\ListPetProj\FoodList\FoodList\FoodList.DAL\bin\Debug\net8.0\FoodList.DAL.runtimeconfig.json
+D:\C# Programing\Projects_On_ASP\ListPetProj\FoodList\FoodList\FoodList.DAL\bin\Debug\net8.0\FoodList.DAL.dll
+D:\C# Programing\Projects_On_ASP\ListPetProj\FoodList\FoodList\FoodList.DAL\bin\Debug\net8.0\FoodList.DAL.pdb
+D:\C# Programing\Projects_On_ASP\ListPetProj\FoodList\FoodList\FoodList.DAL\bin\Debug\net8.0\FoodList.Domain.dll
+D:\C# Programing\Projects_On_ASP\ListPetProj\FoodList\FoodList\FoodList.DAL\bin\Debug\net8.0\FoodList.Domain.pdb
+D:\C# Programing\Projects_On_ASP\ListPetProj\FoodList\FoodList\FoodList.DAL\obj\Debug\net8.0\FoodList.DAL.csproj.AssemblyReference.cache
+D:\C# Programing\Projects_On_ASP\ListPetProj\FoodList\FoodList\FoodList.DAL\obj\Debug\net8.0\FoodList.DAL.GeneratedMSBuildEditorConfig.editorconfig
+D:\C# Programing\Projects_On_ASP\ListPetProj\FoodList\FoodList\FoodList.DAL\obj\Debug\net8.0\FoodList.DAL.AssemblyInfoInputs.cache
+D:\C# Programing\Projects_On_ASP\ListPetProj\FoodList\FoodList\FoodList.DAL\obj\Debug\net8.0\FoodList.DAL.AssemblyInfo.cs
+D:\C# Programing\Projects_On_ASP\ListPetProj\FoodList\FoodList\FoodList.DAL\obj\Debug\net8.0\FoodList.DAL.csproj.CoreCompileInputs.cache
+D:\C# Programing\Projects_On_ASP\ListPetProj\FoodList\FoodList\FoodList.DAL\obj\Debug\net8.0\FoodList.0355DDAC.Up2Date
+D:\C# Programing\Projects_On_ASP\ListPetProj\FoodList\FoodList\FoodList.DAL\obj\Debug\net8.0\FoodList.DAL.dll
+D:\C# Programing\Projects_On_ASP\ListPetProj\FoodList\FoodList\FoodList.DAL\obj\Debug\net8.0\refint\FoodList.DAL.dll
+D:\C# Programing\Projects_On_ASP\ListPetProj\FoodList\FoodList\FoodList.DAL\obj\Debug\net8.0\FoodList.DAL.pdb
+D:\C# Programing\Projects_On_ASP\ListPetProj\FoodList\FoodList\FoodList.DAL\obj\Debug\net8.0\FoodList.DAL.genruntimeconfig.cache
+D:\C# Programing\Projects_On_ASP\ListPetProj\FoodList\FoodList\FoodList.DAL\obj\Debug\net8.0\ref\FoodList.DAL.dll

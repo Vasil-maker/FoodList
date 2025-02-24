@@ -1,0 +1,17 @@
+D:\C# Programing\Projects_On_ASP\ListPetProj\FoodList\FoodList\FoodListSerivce\bin\Debug\net8.0\FoodListSerivce.deps.json
+D:\C# Programing\Projects_On_ASP\ListPetProj\FoodList\FoodList\FoodListSerivce\bin\Debug\net8.0\FoodListSerivce.dll
+D:\C# Programing\Projects_On_ASP\ListPetProj\FoodList\FoodList\FoodListSerivce\bin\Debug\net8.0\FoodListSerivce.pdb
+D:\C# Programing\Projects_On_ASP\ListPetProj\FoodList\FoodList\FoodListSerivce\bin\Debug\net8.0\FoodList.DAL.dll
+D:\C# Programing\Projects_On_ASP\ListPetProj\FoodList\FoodList\FoodListSerivce\bin\Debug\net8.0\FoodList.Domain.dll
+D:\C# Programing\Projects_On_ASP\ListPetProj\FoodList\FoodList\FoodListSerivce\bin\Debug\net8.0\FoodList.DAL.pdb
+D:\C# Programing\Projects_On_ASP\ListPetProj\FoodList\FoodList\FoodListSerivce\bin\Debug\net8.0\FoodList.Domain.pdb
+D:\C# Programing\Projects_On_ASP\ListPetProj\FoodList\FoodList\FoodListSerivce\obj\Debug\net8.0\FoodListSerivce.csproj.AssemblyReference.cache
+D:\C# Programing\Projects_On_ASP\ListPetProj\FoodList\FoodList\FoodListSerivce\obj\Debug\net8.0\FoodListSerivce.GeneratedMSBuildEditorConfig.editorconfig
+D:\C# Programing\Projects_On_ASP\ListPetProj\FoodList\FoodList\FoodListSerivce\obj\Debug\net8.0\FoodListSerivce.AssemblyInfoInputs.cache
+D:\C# Programing\Projects_On_ASP\ListPetProj\FoodList\FoodList\FoodListSerivce\obj\Debug\net8.0\FoodListSerivce.AssemblyInfo.cs
+D:\C# Programing\Projects_On_ASP\ListPetProj\FoodList\FoodList\FoodListSerivce\obj\Debug\net8.0\FoodListSerivce.csproj.CoreCompileInputs.cache
+D:\C# Programing\Projects_On_ASP\ListPetProj\FoodList\FoodList\FoodListSerivce\obj\Debug\net8.0\FoodList.9E9C86D9.Up2Date
+D:\C# Programing\Projects_On_ASP\ListPetProj\FoodList\FoodList\FoodListSerivce\obj\Debug\net8.0\FoodListSerivce.dll
+D:\C# Programing\Projects_On_ASP\ListPetProj\FoodList\FoodList\FoodListSerivce\obj\Debug\net8.0\refint\FoodListSerivce.dll
+D:\C# Programing\Projects_On_ASP\ListPetProj\FoodList\FoodList\FoodListSerivce\obj\Debug\net8.0\FoodListSerivce.pdb
+D:\C# Programing\Projects_On_ASP\ListPetProj\FoodList\FoodList\FoodListSerivce\obj\Debug\net8.0\ref\FoodListSerivce.dll
