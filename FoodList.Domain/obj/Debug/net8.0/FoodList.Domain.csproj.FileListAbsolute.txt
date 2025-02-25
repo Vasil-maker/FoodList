@@ -9,3 +9,4 @@ D:\C# Programing\Projects_On_ASP\ListPetProj\FoodList\FoodList\FoodList.Domain\o
 D:\C# Programing\Projects_On_ASP\ListPetProj\FoodList\FoodList\FoodList.Domain\obj\Debug\net8.0\refint\FoodList.Domain.dll
 D:\C# Programing\Projects_On_ASP\ListPetProj\FoodList\FoodList\FoodList.Domain\obj\Debug\net8.0\FoodList.Domain.pdb
 D:\C# Programing\Projects_On_ASP\ListPetProj\FoodList\FoodList\FoodList.Domain\obj\Debug\net8.0\ref\FoodList.Domain.dll
+D:\C# Programing\Projects_On_ASP\ListPetProj\FoodList\FoodList\FoodList.Domain\obj\Debug\net8.0\FoodList.Domain.sourcelink.json

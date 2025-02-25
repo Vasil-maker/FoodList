@@ -15,3 +15,4 @@ D:\C# Programing\Projects_On_ASP\ListPetProj\FoodList\FoodList\FoodList.DAL\obj\
 D:\C# Programing\Projects_On_ASP\ListPetProj\FoodList\FoodList\FoodList.DAL\obj\Debug\net8.0\FoodList.DAL.pdb
 D:\C# Programing\Projects_On_ASP\ListPetProj\FoodList\FoodList\FoodList.DAL\obj\Debug\net8.0\FoodList.DAL.genruntimeconfig.cache
 D:\C# Programing\Projects_On_ASP\ListPetProj\FoodList\FoodList\FoodList.DAL\obj\Debug\net8.0\ref\FoodList.DAL.dll
+D:\C# Programing\Projects_On_ASP\ListPetProj\FoodList\FoodList\FoodList.DAL\obj\Debug\net8.0\FoodList.DAL.sourcelink.json

@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "D:\\C# Programing\\Projects_On_ASP\\ListPetProj\\FoodList\\FoodList\\FoodList\\wwwroot\\foto.jpg",
+      "PackagePath": "staticwebassets\\foto.jpg"
+    },
+    {
       "Id": "D:\\C# Programing\\Projects_On_ASP\\ListPetProj\\FoodList\\FoodList\\FoodList\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

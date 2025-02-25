@@ -12,5 +12,11 @@ namespace FoodListSerivce.Interfaces
     public interface IFoodCulSerivce
     {
         Task<IBaseResponse<FoodCulEntity>> Create(CreateProductViewModels model);
+
+        Task<IBaseResponse<ProductsForDayEntity>> AddProdDay(AddProductForDayViewModels model);
+        Task<IBaseResponse<IEnumerable<FoodCulEntity>>> GetAllProducts();
+
+
+
     }
 }

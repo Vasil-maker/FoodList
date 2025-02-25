@@ -1,0 +1,164 @@
+﻿@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Результаты по дням";
+}
+
+<div class="container mx-auto p-6">
+    <!-- Заголовок с датой -->
+    <h1 class="text-2xl font-bold mb-4">Продукты за @DateTime.Today.ToString("dd.MM.yyyy")</h1>
+
+    <!-- Поле поиска продукта -->
+    <div class="mb-4">
+        <label for="productSearch" class="block text-sm font-medium">Введите название продукта</label>
+        <input type="text" id="productSearch" class="w-full p-2 border rounded" placeholder="Начните вводить...">
+        <ul id="searchResults" class="border rounded mt-2 hidden bg-white shadow-md"></ul>
+    </div>
+
+    <!-- Форма добавления продукта -->
+    <div id="productDetails" class="hidden p-4 border rounded bg-white shadow-lg">
+        <h2 class="text-lg font-semibold">Детали продукта</h2>
+        <p id="productName"></p>
+
+        <div class="mt-3">
+            <label class="block text-sm font-medium">Вес (граммы)</label>
+            <input type="number" id="productWeight" class="w-full p-2 border rounded" min="1">
+        </div>
+
+        <div class="mt-3 grid grid-cols-2 gap-2">
+            <div><strong>Калории:</strong> <span id="productCalories">-</span></div>
+            <div><strong>Белки:</strong> <span id="productProtein">-</span></div>
+            <div><strong>Жиры:</strong> <span id="productFats">-</span></div>
+            <div><strong>Углеводы:</strong> <span id="productCarbs">-</span></div>
+        </div>
+
+        <button id="addProductBtn" class="mt-4 bg-blue-500 text-white p-2 rounded w-full">
+            Добавить продукт
+        </button>
+    </div>
+
+    <!-- Таблица с добавленными продуктами -->
+    <div class="mt-6">
+        <h2 class="text-lg font-semibold mb-2">Список съеденных продуктов</h2>
+        <table class="w-full border-collapse border border-gray-300">
+            <thead>
+                <tr class="bg-gray-200">
+                    <th class="border p-2">Название</th>
+                    <th class="border p-2">Вес (г)</th>
+                    <th class="border p-2">Калории</th>
+                    <th class="border p-2">Белки</th>
+                    <th class="border p-2">Жиры</th>
+                    <th class="border p-2">Углеводы</th>
+                </tr>
+            </thead>
+            <tbody id="productsTable"></tbody>
+        </table>
+    </div>
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        let searchInput = document.getElementById("productSearch");
+        let searchResults = document.getElementById("searchResults");
+        let productDetails = document.getElementById("productDetails");
+        let productNameElem = document.getElementById("productName");
+        let productWeight = document.getElementById("productWeight");
+        let productCalories = document.getElementById("productCalories");
+        let productProtein = document.getElementById("productProtein");
+        let productFats = document.getElementById("productFats");
+        let productCarbs = document.getElementById("productCarbs");
+        let addProductBtn = document.getElementById("addProductBtn");
+        let productsTable = document.getElementById("productsTable");
+
+        let selectedProduct = null;
+
+        // Автопоиск продуктов
+        searchInput.addEventListener("input", async function () {
+            let query = this.value.trim();
+            if (query.length < 2) {
+                searchResults.classList.add("hidden");
+                return;
+            }
+
+            let response = await fetch(`/FoodCul/GetProducts`);
+            let data = await response.json();
+
+            if (data.statusCode === 0) {
+                let filteredProducts = data.products.filter(p =>
+                    p.name.toLowerCase().includes(query.toLowerCase())
+                );
+
+                searchResults.innerHTML = "";
+                searchResults.classList.remove("hidden");
+
+                filteredProducts.forEach(product => {
+                    let li = document.createElement("li");
+                    li.textContent = product.name;
+                    li.classList.add("p-2", "hover:bg-gray-100", "cursor-pointer");
+                    li.addEventListener("click", () => selectProduct(product));
+                    searchResults.appendChild(li);
+                });
+            }
+        });
+
+        function selectProduct(product) {
+            selectedProduct = product;
+            searchInput.value = product.name;
+            searchResults.classList.add("hidden");
+
+            productDetails.classList.remove("hidden");
+            productNameElem.textContent = product.name;
+            productWeight.value = "";
+            productCalories.textContent = "-";
+            productProtein.textContent = "-";
+            productFats.textContent = "-";
+            productCarbs.textContent = "-";
+        }
+
+        // Пересчет БЖУ и калорийности при вводе веса
+        productWeight.addEventListener("input", function () {
+            let weight = parseFloat(this.value);
+            if (isNaN(weight) || weight <= 0 || !selectedProduct) return;
+
+            let factor = weight / 100;
+            productCalories.textContent = (selectedProduct.calories * factor).toFixed(2);
+            productProtein.textContent = (selectedProduct.protein * factor).toFixed(2);
+            productFats.textContent = (selectedProduct.fats * factor).toFixed(2);
+            productCarbs.textContent = (selectedProduct.carbohydrates * factor).toFixed(2);
+        });
+
+        // Добавление продукта в таблицу
+        addProductBtn.addEventListener("click", async function () {
+            let weight = parseInt(productWeight.value);
+            if (!selectedProduct || isNaN(weight) || weight <= 0) {
+                alert("Введите корректный вес продукта!");
+                return;
+            }
+
+            let response = await fetch("/FoodCul/AddProductForDay", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({
+                    date: new Date().toISOString(),
+                    weight: weight,
+                    name: selectedProduct.name
+                })
+            });
+
+            let data = await response.json();
+            if (data.statusCode === 0) {
+                let row = `<tr>
+                    <td class="border p-2">${data.product.name}</td>
+                    <td class="border p-2">${data.product.weight}</td>
+                    <td class="border p-2">${data.product.calories}</td>
+                    <td class="border p-2">${data.product.protein}</td>
+                    <td class="border p-2">${data.product.fats}</td>
+                    <td class="border p-2">${data.product.carbohydrates}</td>
+                </tr>`;
+                productsTable.innerHTML += row;
+                productDetails.classList.add("hidden");
+            } else {
+                alert(data.description);
+            }
+        });
+    });
+</script>

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "rwNoS3jQQ05Ae4hX9F+so2nGH9Nc8Xjbq1QiJsLeKGU=",
+  "Hash": "oOfo/c/cWiMvTT3sdg6kFhj56W99wMFfLsxUyCxrCE0=",
   "Source": "FoodList",
   "BasePath": "_content/FoodList",
   "Mode": "Default",
@@ -99,6 +99,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "D:\\C# Programing\\Projects_On_ASP\\ListPetProj\\FoodList\\FoodList\\FoodList\\wwwroot\\foto.jpg",
+      "SourceId": "FoodList",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\C# Programing\\Projects_On_ASP\\ListPetProj\\FoodList\\FoodList\\FoodList\\wwwroot\\",
+      "BasePath": "_content/FoodList",
+      "RelativePath": "foto#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "u2k7ljoo7p",
+      "Integrity": "ZkLkHgJFSxJ5HBLHWl/NgRoeELHdBrz7L58WvgCaJpA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\foto.jpg"
     },
     {
       "Identity": "D:\\C# Programing\\Projects_On_ASP\\ListPetProj\\FoodList\\FoodList\\FoodList\\wwwroot\\js\\site.js",
@@ -1645,6 +1666,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-1eP3oZZIxBH+AIrdVtGsBlnEZTsOoDPtkh02vGGPiJM="
+        }
+      ]
+    },
+    {
+      "Route": "foto.jpg",
+      "AssetFile": "D:\\C# Programing\\Projects_On_ASP\\ListPetProj\\FoodList\\FoodList\\FoodList\\wwwroot\\foto.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1537877"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ZkLkHgJFSxJ5HBLHWl/NgRoeELHdBrz7L58WvgCaJpA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Feb 2025 16:49:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ZkLkHgJFSxJ5HBLHWl/NgRoeELHdBrz7L58WvgCaJpA="
+        }
+      ]
+    },
+    {
+      "Route": "foto.u2k7ljoo7p.jpg",
+      "AssetFile": "D:\\C# Programing\\Projects_On_ASP\\ListPetProj\\FoodList\\FoodList\\FoodList\\wwwroot\\foto.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1537877"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ZkLkHgJFSxJ5HBLHWl/NgRoeELHdBrz7L58WvgCaJpA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Feb 2025 16:49:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "u2k7ljoo7p"
+        },
+        {
+          "Name": "label",
+          "Value": "foto.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ZkLkHgJFSxJ5HBLHWl/NgRoeELHdBrz7L58WvgCaJpA="
         }
       ]
     },

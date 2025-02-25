@@ -22,6 +22,9 @@ namespace FoodList
             builder.Services.AddScoped<IBaseRepository<FoodCulEntity>, FoodCulRepository>();
             builder.Services.AddScoped<IFoodCulSerivce, FoodCulSerivce>();
 
+            builder.Services.AddScoped<IBaseRepository<ProductsForDayEntity>, ProductsForDayRepository>();
+
+
             var connectionString = builder.Configuration.GetConnectionString("MSSQL");
             builder.Services.AddDbContext<ApplicationDbContext>(options =>
             {

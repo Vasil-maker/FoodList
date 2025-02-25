@@ -28,8 +28,16 @@ build_property._RazorSourceGeneratorDebug =
 build_property.EffectiveAnalysisLevelStyle = 8.0
 build_property.EnableCodeStyleSeverity = 
 
+[D:/C\# Programing/Projects_On_ASP/ListPetProj/FoodList/FoodList/FoodList/Views/FoodCul/Crafting.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9vZEN1bFxDcmFmdGluZy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/C\# Programing/Projects_On_ASP/ListPetProj/FoodList/FoodList/FoodList/Views/FoodCul/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9vZEN1bFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\# Programing/Projects_On_ASP/ListPetProj/FoodList/FoodList/FoodList/Views/FoodCul/Result.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9vZEN1bFxSZXN1bHQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/C\# Programing/Projects_On_ASP/ListPetProj/FoodList/FoodList/FoodList/Views/Shared/_ValidationScriptsPartial.cshtml]

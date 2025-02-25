@@ -14,9 +14,11 @@ namespace FoodList.DAL
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
         {
+            //Database.EnsureDeleted();
             Database.EnsureCreated();
         }
 
         public DbSet<FoodCulEntity> FoodCul { get; set; }
+        public DbSet<ProductsForDayEntity> ProductsForDay { get; set; }
     }
 }

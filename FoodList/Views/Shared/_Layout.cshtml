@@ -6,24 +6,47 @@
     <title>@ViewData["Title"]</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-100"> 
-    <header class="bg-blue-500 text-white p-4">
+<body class="bg-gray-100 flex flex-col min-h-screen">
+
+    <!-- Шапка сайта -->
+    <header class="bg-blue-500 text-white p-4 flex justify-between items-center">
         <h1 class="text-2xl font-semibold">Дневник питания</h1>
+        <nav>
+            <ul class="flex space-x-4">
+                <li><a href="/" class="hover:underline">Главная</a></li>
+                <li><a href="/FoodCul/Result" class="hover:underline">Результаты по дням</a></li>
+                <li><a href="/FoodCul/Crafting" class="hover:underline">Создание блюда</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <div class="container mx-auto flex p-4">
-        <!-- Основной контент страницы -->
-        <div class="w-3/4 p-4">
-            @RenderBody()
-        </div>
+    <!-- Основной контент -->
+    <div class="container mx-auto flex-grow flex p-4">
+        <main class="flex-grow">
+            @if (ViewContext.RouteData.Values["Action"]?.ToString() == "Index")
+            {
+                <div class="text-center mb-6">
+                    <h1 class="text-2xl font-bold mb-4">Добро пожаловать в Дневник питания!</h1>
+                    <p>Здесь будет основное содержимое сайта.</p>
+                </div>
 
-        <!-- Боковое меню (показывается, если страница его определила) -->
+                <div class="flex justify-center mb-6">
+                    <img src="~/foto.jpg" alt="Пирамида питания" class="w-2/3 max-w-2xl h-auto rounded-lg shadow-lg">
+                </div>
+            }
+
+            @RenderBody()
+        </main>
+
+        <!-- Боковое меню (если оно есть) -->
         @RenderSection("Sidebar", required: false)
     </div>
 
-    <footer class="bg-gray-800 text-white text-center p-2 mt-4">
-        <p>© 2025 Дневник питания</p>
+    <!-- Футер -->
+    <footer class="bg-gray-800 text-white text-center p-4 mt-auto">
+        © 2025 Дневник питания
     </footer>
+
 
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script>
@@ -80,8 +103,6 @@
             }
         });
     </script>
-
-
 
 </body>
 </html>

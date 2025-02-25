@@ -17,13 +17,71 @@ namespace FoodListSerivce.Implementations
     public class FoodCulSerivce : IFoodCulSerivce
     {
         private readonly IBaseRepository<FoodCulEntity> _foodCulRepository;
+        private readonly IBaseRepository<ProductsForDayEntity> _productsForDayRepository;
+
         private ILogger<FoodCulSerivce> _logger;
 
-        public FoodCulSerivce(IBaseRepository<FoodCulEntity> foodCul, 
+        public FoodCulSerivce(IBaseRepository<FoodCulEntity> foodCul, IBaseRepository<ProductsForDayEntity> prodDay,
             ILogger<FoodCulSerivce> logger)
         {
             _foodCulRepository = foodCul;
+            _productsForDayRepository = prodDay;
             _logger = logger;
+        }
+
+        public async Task<IBaseResponse<ProductsForDayEntity>> AddProdDay(AddProductForDayViewModels model)
+        {
+            try
+            { 
+                // Ищем продукт в базе по названию
+                var product = await _foodCulRepository.GetAll()
+                    .FirstOrDefaultAsync(p => p.Name.ToLower() == model.Name.ToLower());
+
+                if (product == null)
+                {
+                    return new BaseResponse<ProductsForDayEntity>()
+                    {
+                        Description = "Продукт не найден!",
+                        StatusCode = StatusCode.ProductNotFound
+                    };
+                }
+
+                // Рассчитываем БЖУ и калории
+                double factor = model.Weight / 100.0;
+
+                var prodForDay = new ProductsForDayEntity()
+                {
+                    Date = DateTime.UtcNow.Date, // Убираем возможные проблемы с форматированием даты
+                    Weight = model.Weight,
+                    Name = product.Name,
+                    Calories = Math.Round(product.Calories * factor, 2),
+                    Protein = Math.Round(product.Protein * factor, 2),
+                    Fats = Math.Round(product.Fats * factor, 2),
+                    Carbohydrates = Math.Round(product.Carbohydrates * factor, 2)
+                };
+
+                // Логируем перед сохранением (на всякий случай)
+                _logger.LogInformation($"Добавляем продукт в базу: {prodForDay.Name}, {prodForDay.Weight} г.");
+
+                // Сохраняем в базу
+                await _productsForDayRepository.Create(prodForDay);
+
+                return new BaseResponse<ProductsForDayEntity>()
+                {
+                    Data = prodForDay,
+                    Description = "Продукт успешно добавлен!",
+                    StatusCode = StatusCode.OK
+                };
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, $"[FoodCulService.AddProdDay]: {ex.Message}");
+                return new BaseResponse<ProductsForDayEntity>()
+                {
+                    Description = $"{ex.Message}",
+                    StatusCode = StatusCode.InternalServerError
+                };
+            }
         }
 
 
@@ -75,5 +133,33 @@ namespace FoodListSerivce.Implementations
                 };
             }
         }
+
+
+        public async Task<IBaseResponse<IEnumerable<FoodCulEntity>>> GetAllProducts()
+        {
+            try
+            {
+                var allProducts = await _foodCulRepository.GetAll().ToListAsync();
+
+                return new BaseResponse<IEnumerable<FoodCulEntity>>()
+                {
+                    Data = allProducts,
+                    StatusCode = StatusCode.OK
+                };
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, $"[FoodCulSerivce.GetAllProducts]: {ex.Message}");
+                return new BaseResponse<IEnumerable<FoodCulEntity>>()
+                {
+                    Description = ex.Message,
+                    StatusCode = StatusCode.InternalServerError
+                };
+            }
+        }
+
+        
+
+
     }
 }

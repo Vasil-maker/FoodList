@@ -36,6 +36,18 @@
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"rk0dcnt3fm"},{"Name":"integrity","Value":"sha256-1eP3oZZIxBH\u002BAIrdVtGsBlnEZTsOoDPtkh02vGGPiJM="},{"Name":"label","Value":"_content/FoodList/FoodList.bundle.scp.css"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1126"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00221eP3oZZIxBH\u002BAIrdVtGsBlnEZTsOoDPtkh02vGGPiJM=\u0022"},{"Name":"Last-Modified","Value":"Sat, 22 Feb 2025 16:50:36 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/FoodList/foto.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\foto.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-ZkLkHgJFSxJ5HBLHWl/NgRoeELHdBrz7L58WvgCaJpA="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"1537877"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022ZkLkHgJFSxJ5HBLHWl/NgRoeELHdBrz7L58WvgCaJpA=\u0022"},{"Name":"Last-Modified","Value":"Mon, 24 Feb 2025 16:49:10 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/FoodList/foto.u2k7ljoo7p.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\foto.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"u2k7ljoo7p"},{"Name":"integrity","Value":"sha256-ZkLkHgJFSxJ5HBLHWl/NgRoeELHdBrz7L58WvgCaJpA="},{"Name":"label","Value":"_content/FoodList/foto.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1537877"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022ZkLkHgJFSxJ5HBLHWl/NgRoeELHdBrz7L58WvgCaJpA=\u0022"},{"Name":"Last-Modified","Value":"Mon, 24 Feb 2025 16:49:10 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/FoodList/js/site.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\site.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
