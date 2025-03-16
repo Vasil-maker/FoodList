@@ -3,25 +3,122 @@
     ViewData["Title"] = "Результаты по дням";
 }
 
+<style>
+    .table-container {
+        background-color: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+    }
+
+    .table-container table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    .table-container th,
+    .table-container td {
+        padding: 12px;
+        text-align: center;
+        border-bottom: 1px solid #e2e8f0;
+    }
+
+    .table-container th {
+        background-color: #4a5568;
+        color: #ffffff;
+        font-weight: bold;
+    }
+
+    .table-container tr:hover {
+        background-color: #f7fafc;
+    }
+
+    .table-container tfoot td {
+        font-weight: bold;
+        background-color: #edf2f7;
+    }
+
+    .total-row {
+        font-family: 'Arial', sans-serif;
+        font-size: 1.1em;
+        color: #2d3748;
+    }
+
+    .input-date {
+        border: 1px solid #cbd5e0;
+        border-radius: 4px;
+        padding: 8px;
+        font-size: 1em;
+    }
+
+    .search-input {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #cbd5e0;
+        border-radius: 4px;
+        font-size: 1em;
+    }
+
+    .search-results {
+        border: 1px solid #cbd5e0;
+        border-radius: 4px;
+        margin-top: 8px;
+        background-color: #ffffff;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .search-results li {
+        padding: 8px;
+        cursor: pointer;
+    }
+
+    .search-results li:hover {
+        background-color: #f7fafc;
+    }
+
+    .product-details {
+        background-color: #ffffff;
+        border: 1px solid #cbd5e0;
+        border-radius: 8px;
+        padding: 16px;
+        margin-top: 16px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .add-product-btn {
+        background-color: #4299e1;
+        color: #ffffff;
+        padding: 8px 16px;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 1em;
+        border: none;
+    }
+
+    .add-product-btn:hover {
+        background-color: #3182ce;
+    }
+</style>
+
 <div class="container mx-auto p-6">
     <!-- Заголовок с датой -->
-    <h1 class="text-2xl font-bold mb-4">Продукты за @DateTime.Today.ToString("dd.MM.yyyy")</h1>
+    <h1 class="text-2xl font-bold mb-4">Продукты за <input type="date" id="selectedDate" value="@ViewBag.SelectedDate" class="input-date"></h1>
 
     <!-- Поле поиска продукта -->
     <div class="mb-4">
         <label for="productSearch" class="block text-sm font-medium">Введите название продукта</label>
-        <input type="text" id="productSearch" class="w-full p-2 border rounded" placeholder="Начните вводить...">
-        <ul id="searchResults" class="border rounded mt-2 hidden bg-white shadow-md"></ul>
+        <input type="text" id="productSearch" class="search-input" placeholder="Начните вводить...">
+        <ul id="searchResults" class="search-results hidden"></ul>
     </div>
 
     <!-- Форма добавления продукта -->
-    <div id="productDetails" class="hidden p-4 border rounded bg-white shadow-lg">
+    <div id="productDetails" class="product-details hidden">
         <h2 class="text-lg font-semibold">Детали продукта</h2>
         <p id="productName"></p>
 
         <div class="mt-3">
             <label class="block text-sm font-medium">Вес (граммы)</label>
-            <input type="number" id="productWeight" class="w-full p-2 border rounded" min="1">
+            <input type="number" id="productWeight" class="search-input" min="1">
         </div>
 
         <div class="mt-3 grid grid-cols-2 gap-2">
@@ -31,32 +128,55 @@
             <div><strong>Углеводы:</strong> <span id="productCarbs">-</span></div>
         </div>
 
-        <button id="addProductBtn" class="mt-4 bg-blue-500 text-white p-2 rounded w-full">
+        <button id="addProductBtn" class="add-product-btn mt-4">
             Добавить продукт
         </button>
     </div>
 
     <!-- Таблица с добавленными продуктами -->
-    <div class="mt-6">
+    <div class="mt-6 table-container">
         <h2 class="text-lg font-semibold mb-2">Список съеденных продуктов</h2>
-        <table class="w-full border-collapse border border-gray-300">
+        <table>
             <thead>
-                <tr class="bg-gray-200">
-                    <th class="border p-2">Название</th>
-                    <th class="border p-2">Вес (г)</th>
-                    <th class="border p-2">Калории</th>
-                    <th class="border p-2">Белки</th>
-                    <th class="border p-2">Жиры</th>
-                    <th class="border p-2">Углеводы</th>
+                <tr>
+                    <th>Название</th>
+                    <th>Вес (г)</th>
+                    <th>Калории</th>
+                    <th>Белки</th>
+                    <th>Жиры</th>
+                    <th>Углеводы</th>
                 </tr>
             </thead>
-            <tbody id="productsTable"></tbody>
+            <tbody id="productsTable">
+                @foreach (var product in ViewBag.Products)
+                {
+                    <tr>
+                        <td>@product.Name</td>
+                        <td>@product.Weight</td>
+                        <td>@product.Calories</td>
+                        <td>@product.Protein</td>
+                        <td>@product.Fats</td>
+                        <td>@product.Carbohydrates</td>
+                    </tr>
+                }
+            </tbody>
+            <tfoot>
+                <tr class="total-row">
+                    <td>Итого:</td>
+                    <td id="totalWeight"></td>
+                    <td id="totalCalories"></td>
+                    <td id="totalProtein"></td>
+                    <td id="totalFats"></td>
+                    <td id="totalCarbs"></td>
+                </tr>
+            </tfoot>
         </table>
     </div>
 </div>
 
 <script>
     document.addEventListener("DOMContentLoaded", function () {
+        let selectedDate = document.getElementById("selectedDate");
         let searchInput = document.getElementById("productSearch");
         let searchResults = document.getElementById("searchResults");
         let productDetails = document.getElementById("productDetails");
@@ -71,6 +191,29 @@
 
         let selectedProduct = null;
 
+        // Обновление таблицы при изменении даты
+        selectedDate.addEventListener("change", async function () {
+            let date = this.value;
+            let response = await fetch(`/FoodCul/GetProductsForDay?date=${date}`);
+            let data = await response.json();
+
+            if (data.statusCode === 0) {
+                productsTable.innerHTML = "";
+                data.products.forEach(product => {
+                    let row = `<tr>
+                        <td>${product.name}</td>
+                        <td>${product.weight}</td>
+                        <td>${product.calories}</td>
+                        <td>${product.protein}</td>
+                        <td>${product.fats}</td>
+                        <td>${product.carbohydrates}</td>
+                    </tr>`;
+                    productsTable.innerHTML += row;
+                });
+                calculateTotals();
+            }
+        });
+
         // Автопоиск продуктов
         searchInput.addEventListener("input", async function () {
             let query = this.value.trim();
@@ -79,7 +222,7 @@
                 return;
             }
 
-            let response = await fetch(`/FoodCul/GetProducts`);
+            let response = await fetch('/FoodCul/GetProducts');
             let data = await response.json();
 
             if (data.statusCode === 0) {
@@ -138,7 +281,7 @@
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({
-                    date: new Date().toISOString(),
+                    date: selectedDate.value,
                     weight: weight,
                     name: selectedProduct.name
                 })
@@ -147,18 +290,49 @@
             let data = await response.json();
             if (data.statusCode === 0) {
                 let row = `<tr>
-                    <td class="border p-2">${data.product.name}</td>
-                    <td class="border p-2">${data.product.weight}</td>
-                    <td class="border p-2">${data.product.calories}</td>
-                    <td class="border p-2">${data.product.protein}</td>
-                    <td class="border p-2">${data.product.fats}</td>
-                    <td class="border p-2">${data.product.carbohydrates}</td>
+                    <td>${data.product.name}</td>
+                    <td>${data.product.weight}</td>
+                    <td>${data.product.calories}</td>
+                    <td>${data.product.protein}</td>
+                    <td>${data.product.fats}</td>
+                    <td>${data.product.carbohydrates}</td>
                 </tr>`;
                 productsTable.innerHTML += row;
                 productDetails.classList.add("hidden");
+                calculateTotals();
             } else {
                 alert(data.description);
             }
         });
+
+        // Функция для подсчета итоговых значений
+        function calculateTotals() {
+            let totalWeight = 0;
+            let totalCalories = 0;
+            let totalProtein = 0;
+            let totalFats = 0;
+            let totalCarbs = 0;
+
+            let rows = productsTable.getElementsByTagName("tr");
+            for (let row of rows) {
+                let cells = row.getElementsByTagName("td");
+                if (cells.length === 6) {
+                    totalWeight += parseFloat(cells[1].textContent);
+                    totalCalories += parseFloat(cells[2].textContent);
+                    totalProtein += parseFloat(cells[3].textContent);
+                    totalFats += parseFloat(cells[4].textContent);
+                    totalCarbs += parseFloat(cells[5].textContent);
+                }
+            }
+
+            document.getElementById("totalWeight").textContent = totalWeight.toFixed(2);
+            document.getElementById("totalCalories").textContent = totalCalories.toFixed(2);
+            document.getElementById("totalProtein").textContent = totalProtein.toFixed(2);
+            document.getElementById("totalFats").textContent = totalFats.toFixed(2);
+            document.getElementById("totalCarbs").textContent = totalCarbs.toFixed(2);
+        }
+
+        // Инициализация подсчета итоговых значений
+        calculateTotals();
     });
 </script>

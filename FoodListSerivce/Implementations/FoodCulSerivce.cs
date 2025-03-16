@@ -7,6 +7,7 @@ using FoodListSerivce.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -84,6 +85,53 @@ namespace FoodListSerivce.Implementations
             }
         }
 
+        public async Task<IBaseResponse<FoodCulEntity>> CreateCombinedProduct(CreateProductViewModels model)
+        {
+            try
+            {
+                _logger.LogInformation($"Запрос на создание комбинированного продукта - {model.Name}");
+
+                var product = await _foodCulRepository.GetAll()
+                    .FirstOrDefaultAsync(x => x.Name == model.Name);
+                if (product != null)
+                {
+                    return new BaseResponse<FoodCulEntity>()
+                    {
+                        Description = "Продукт с таким названием уже есть",
+                        StatusCode = StatusCode.ProductIsHasAlready,
+                        Data = product
+                    };
+                }
+
+                product = new FoodCulEntity()
+                {
+                    Category = model.Category,
+                    Name = model.Name,
+                    Calories = model.Calories,
+                    Protein = model.Protein,
+                    Fats = model.Fats,
+                    Carbohydrates = model.Carbohydrates
+                };
+
+                await _foodCulRepository.Create(product);
+                _logger.LogInformation($"Комбинированный продукт добавлен: {product.Name}");
+
+                return new BaseResponse<FoodCulEntity>()
+                {
+                    Description = $"Комбинированный продукт добавлен!",
+                    StatusCode = StatusCode.OK
+                };
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Ошибка при создании комбинированного продукта");
+                return new BaseResponse<FoodCulEntity>()
+                {
+                    Description = "Ошибка при создании комбинированного продукта",
+                    StatusCode = StatusCode.InternalServerError
+                };
+            }
+        }
 
         public async Task<IBaseResponse<FoodCulEntity>> Create(CreateProductViewModels model)
         {
@@ -158,8 +206,64 @@ namespace FoodListSerivce.Implementations
             }
         }
 
-        
+        public async Task<IBaseResponse<IEnumerable<ProductsForDayEntity>>>
+            GetProductsForDay(DateTime data)
+        {
+            try
+            {
+                var products = await _productsForDayRepository.GetAll()
+                    .Where(x => x.Date == data)
+                    .ToListAsync();
 
+                return new BaseResponse<IEnumerable<ProductsForDayEntity>>()
+                {
+                    Data = products,
+                    StatusCode = StatusCode.OK
+                };
+            }
+            catch(Exception ex)
+            {
+                _logger.LogError(ex, $"[FoodCulSerivce.GetProductsForDay]: {ex.Message}");
+                return new BaseResponse<IEnumerable<ProductsForDayEntity>>()
+                {
+                    Description = ex.Message,
+                    StatusCode = StatusCode.InternalServerError
+                };
+            }
+        }
 
+        public async Task<IBaseResponse<bool>> DeleteProduct(long id)
+        {
+            try
+            {
+                var product = await _foodCulRepository.GetAll().FirstOrDefaultAsync(x => x.ID == id);
+
+                if(product == null)
+                {
+                    return new BaseResponse<bool>()
+                    {
+                        Description = "Продукт не найден!",
+                        StatusCode = StatusCode.ProductNotFound
+                    };
+                }
+
+                await _foodCulRepository.Delete(product);
+
+                return new BaseResponse<bool>()
+                {
+                    Description = "Продукт успешно удалён!",
+                    StatusCode = StatusCode.OK
+                };
+            }
+            catch(Exception ex)
+            {
+                _logger.LogError(ex, $"[FoodCulSerivce.DeleteProduct]: {ex.Message}");
+                return new BaseResponse<bool>()
+                {
+                    Description = ex.Message,
+                    StatusCode = StatusCode.InternalServerError
+                };
+            }
+        }
     }
 }

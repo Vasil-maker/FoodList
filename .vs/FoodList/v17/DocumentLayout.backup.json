@@ -3,12 +3,40 @@
   "WorkspaceRootPath": "D:\\C# Programing\\Projects_On_ASP\\ListPetProj\\FoodList\\FoodList\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{47D30752-B6D3-4797-8DAB-D7D2E68DF9B0}|FoodListSerivce\\FoodListSerivce.csproj|d:\\c# programing\\projects_on_asp\\listpetproj\\foodlist\\foodlist\\foodlistserivce\\interfaces\\ifoodculserivce.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{47D30752-B6D3-4797-8DAB-D7D2E68DF9B0}|FoodListSerivce\\FoodListSerivce.csproj|solutionrelative:foodlistserivce\\interfaces\\ifoodculserivce.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F024A8FE-DDFD-4D5A-B41A-A4368B218792}|FoodList\\FoodList.csproj|d:\\c# programing\\projects_on_asp\\listpetproj\\foodlist\\foodlist\\foodlist\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F024A8FE-DDFD-4D5A-B41A-A4368B218792}|FoodList\\FoodList.csproj|solutionrelative:foodlist\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F024A8FE-DDFD-4D5A-B41A-A4368B218792}|FoodList\\FoodList.csproj|d:\\c# programing\\projects_on_asp\\listpetproj\\foodlist\\foodlist\\foodlist\\views\\foodcul\\crafting.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F024A8FE-DDFD-4D5A-B41A-A4368B218792}|FoodList\\FoodList.csproj|solutionrelative:foodlist\\views\\foodcul\\crafting.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F024A8FE-DDFD-4D5A-B41A-A4368B218792}|FoodList\\FoodList.csproj|d:\\c# programing\\projects_on_asp\\listpetproj\\foodlist\\foodlist\\foodlist\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F024A8FE-DDFD-4D5A-B41A-A4368B218792}|FoodList\\FoodList.csproj|solutionrelative:foodlist\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F024A8FE-DDFD-4D5A-B41A-A4368B218792}|FoodList\\FoodList.csproj|d:\\c# programing\\projects_on_asp\\listpetproj\\foodlist\\foodlist\\foodlist\\views\\foodcul\\deleting.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F024A8FE-DDFD-4D5A-B41A-A4368B218792}|FoodList\\FoodList.csproj|solutionrelative:foodlist\\views\\foodcul\\deleting.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F024A8FE-DDFD-4D5A-B41A-A4368B218792}|FoodList\\FoodList.csproj|d:\\c# programing\\projects_on_asp\\listpetproj\\foodlist\\foodlist\\foodlist\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{F024A8FE-DDFD-4D5A-B41A-A4368B218792}|FoodList\\FoodList.csproj|solutionrelative:foodlist\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F024A8FE-DDFD-4D5A-B41A-A4368B218792}|FoodList\\FoodList.csproj|d:\\c# programing\\projects_on_asp\\listpetproj\\foodlist\\foodlist\\foodlist\\views\\foodcul\\result.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F024A8FE-DDFD-4D5A-B41A-A4368B218792}|FoodList\\FoodList.csproj|solutionrelative:foodlist\\views\\foodcul\\result.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F024A8FE-DDFD-4D5A-B41A-A4368B218792}|FoodList\\FoodList.csproj|d:\\c# programing\\projects_on_asp\\listpetproj\\foodlist\\foodlist\\foodlist\\controllers\\foodculcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F024A8FE-DDFD-4D5A-B41A-A4368B218792}|FoodList\\FoodList.csproj|solutionrelative:foodlist\\controllers\\foodculcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{47D30752-B6D3-4797-8DAB-D7D2E68DF9B0}|FoodListSerivce\\FoodListSerivce.csproj|d:\\c# programing\\projects_on_asp\\listpetproj\\foodlist\\foodlist\\foodlistserivce\\implementations\\foodculserivce.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{47D30752-B6D3-4797-8DAB-D7D2E68DF9B0}|FoodListSerivce\\FoodListSerivce.csproj|solutionrelative:foodlistserivce\\implementations\\foodculserivce.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47D30752-B6D3-4797-8DAB-D7D2E68DF9B0}|FoodListSerivce\\FoodListSerivce.csproj|d:\\c# programing\\projects_on_asp\\listpetproj\\foodlist\\foodlist\\foodlistserivce\\interfaces\\ifoodculserivce.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47D30752-B6D3-4797-8DAB-D7D2E68DF9B0}|FoodListSerivce\\FoodListSerivce.csproj|solutionrelative:foodlistserivce\\interfaces\\ifoodculserivce.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{97481B20-348A-4B4D-BAD7-0B89D180D629}|FoodList.Domain\\FoodList.Domain.csproj|d:\\c# programing\\projects_on_asp\\listpetproj\\foodlist\\foodlist\\foodlist.domain\\viewmodels\\foodcul\\addproductfordayviewmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -19,36 +47,32 @@
       "RelativeMoniker": "D:0:0:{97481B20-348A-4B4D-BAD7-0B89D180D629}|FoodList.Domain\\FoodList.Domain.csproj|solutionrelative:foodlist.domain\\viewmodels\\foodcul\\createproductviewmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F024A8FE-DDFD-4D5A-B41A-A4368B218792}|FoodList\\FoodList.csproj|d:\\c# programing\\projects_on_asp\\listpetproj\\foodlist\\foodlist\\foodlist\\controllers\\foodculcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F024A8FE-DDFD-4D5A-B41A-A4368B218792}|FoodList\\FoodList.csproj|solutionrelative:foodlist\\controllers\\foodculcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F024A8FE-DDFD-4D5A-B41A-A4368B218792}|FoodList\\FoodList.csproj|d:\\c# programing\\projects_on_asp\\listpetproj\\foodlist\\foodlist\\foodlist\\views\\foodcul\\result.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F024A8FE-DDFD-4D5A-B41A-A4368B218792}|FoodList\\FoodList.csproj|solutionrelative:foodlist\\views\\foodcul\\result.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{97481B20-348A-4B4D-BAD7-0B89D180D629}|FoodList.Domain\\FoodList.Domain.csproj|d:\\c# programing\\projects_on_asp\\listpetproj\\foodlist\\foodlist\\foodlist.domain\\entity\\productsfordayentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{97481B20-348A-4B4D-BAD7-0B89D180D629}|FoodList.Domain\\FoodList.Domain.csproj|solutionrelative:foodlist.domain\\entity\\productsfordayentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F024A8FE-DDFD-4D5A-B41A-A4368B218792}|FoodList\\FoodList.csproj|d:\\c# programing\\projects_on_asp\\listpetproj\\foodlist\\foodlist\\foodlist\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F024A8FE-DDFD-4D5A-B41A-A4368B218792}|FoodList\\FoodList.csproj|solutionrelative:foodlist\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{97481B20-348A-4B4D-BAD7-0B89D180D629}|FoodList.Domain\\FoodList.Domain.csproj|d:\\c# programing\\projects_on_asp\\listpetproj\\foodlist\\foodlist\\foodlist.domain\\response\\baseresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{97481B20-348A-4B4D-BAD7-0B89D180D629}|FoodList.Domain\\FoodList.Domain.csproj|solutionrelative:foodlist.domain\\response\\baseresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97481B20-348A-4B4D-BAD7-0B89D180D629}|FoodList.Domain\\FoodList.Domain.csproj|d:\\c# programing\\projects_on_asp\\listpetproj\\foodlist\\foodlist\\foodlist.domain\\enum\\statuscode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97481B20-348A-4B4D-BAD7-0B89D180D629}|FoodList.Domain\\FoodList.Domain.csproj|solutionrelative:foodlist.domain\\enum\\statuscode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{97481B20-348A-4B4D-BAD7-0B89D180D629}|FoodList.Domain\\FoodList.Domain.csproj|d:\\c# programing\\projects_on_asp\\listpetproj\\foodlist\\foodlist\\foodlist.domain\\enum\\categories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{97481B20-348A-4B4D-BAD7-0B89D180D629}|FoodList.Domain\\FoodList.Domain.csproj|solutionrelative:foodlist.domain\\enum\\categories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F3B16742-FC76-4A81-B445-553B4F14AD81}|FoodList.DAL\\FoodList.DAL.csproj|d:\\c# programing\\projects_on_asp\\listpetproj\\foodlist\\foodlist\\foodlist.dal\\repositories\\productsfordayrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F3B16742-FC76-4A81-B445-553B4F14AD81}|FoodList.DAL\\FoodList.DAL.csproj|solutionrelative:foodlist.dal\\repositories\\productsfordayrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{97481B20-348A-4B4D-BAD7-0B89D180D629}|FoodList.Domain\\FoodList.Domain.csproj|d:\\c# programing\\projects_on_asp\\listpetproj\\foodlist\\foodlist\\foodlist.domain\\entity\\productsfordayentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97481B20-348A-4B4D-BAD7-0B89D180D629}|FoodList.Domain\\FoodList.Domain.csproj|solutionrelative:foodlist.domain\\entity\\productsfordayentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{97481B20-348A-4B4D-BAD7-0B89D180D629}|FoodList.Domain\\FoodList.Domain.csproj|d:\\c# programing\\projects_on_asp\\listpetproj\\foodlist\\foodlist\\foodlist.domain\\entity\\foodculentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{97481B20-348A-4B4D-BAD7-0B89D180D629}|FoodList.Domain\\FoodList.Domain.csproj|solutionrelative:foodlist.domain\\entity\\foodculentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F3B16742-FC76-4A81-B445-553B4F14AD81}|FoodList.DAL\\FoodList.DAL.csproj|d:\\c# programing\\projects_on_asp\\listpetproj\\foodlist\\foodlist\\foodlist.dal\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F3B16742-FC76-4A81-B445-553B4F14AD81}|FoodList.DAL\\FoodList.DAL.csproj|solutionrelative:foodlist.dal\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F3B16742-FC76-4A81-B445-553B4F14AD81}|FoodList.DAL\\FoodList.DAL.csproj|d:\\c# programing\\projects_on_asp\\listpetproj\\foodlist\\foodlist\\foodlist.dal\\repositories\\productsfordayrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F3B16742-FC76-4A81-B445-553B4F14AD81}|FoodList.DAL\\FoodList.DAL.csproj|solutionrelative:foodlist.dal\\repositories\\productsfordayrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F3B16742-FC76-4A81-B445-553B4F14AD81}|FoodList.DAL\\FoodList.DAL.csproj|d:\\c# programing\\projects_on_asp\\listpetproj\\foodlist\\foodlist\\foodlist.dal\\repositories\\foodculrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -57,14 +81,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{F3B16742-FC76-4A81-B445-553B4F14AD81}|FoodList.DAL\\FoodList.DAL.csproj|d:\\c# programing\\projects_on_asp\\listpetproj\\foodlist\\foodlist\\foodlist.dal\\interfaces\\ibaserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F3B16742-FC76-4A81-B445-553B4F14AD81}|FoodList.DAL\\FoodList.DAL.csproj|solutionrelative:foodlist.dal\\interfaces\\ibaserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F3B16742-FC76-4A81-B445-553B4F14AD81}|FoodList.DAL\\FoodList.DAL.csproj|d:\\c# programing\\projects_on_asp\\listpetproj\\foodlist\\foodlist\\foodlist.dal\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F3B16742-FC76-4A81-B445-553B4F14AD81}|FoodList.DAL\\FoodList.DAL.csproj|solutionrelative:foodlist.dal\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{97481B20-348A-4B4D-BAD7-0B89D180D629}|FoodList.Domain\\FoodList.Domain.csproj|d:\\c# programing\\projects_on_asp\\listpetproj\\foodlist\\foodlist\\foodlist.domain\\enum\\statuscode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{97481B20-348A-4B4D-BAD7-0B89D180D629}|FoodList.Domain\\FoodList.Domain.csproj|solutionrelative:foodlist.domain\\enum\\statuscode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -74,17 +90,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 11,
+          "SelectedChildIndex": 18,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 19,
               "Title": "IBaseRepository.cs",
               "DocumentMoniker": "D:\\C# Programing\\Projects_On_ASP\\ListPetProj\\FoodList\\FoodList\\FoodList.DAL\\Interfaces\\IBaseRepository.cs",
               "RelativeDocumentMoniker": "FoodList.DAL\\Interfaces\\IBaseRepository.cs",
               "ToolTip": "D:\\C# Programing\\Projects_On_ASP\\ListPetProj\\FoodList\\FoodList\\FoodList.DAL\\Interfaces\\IBaseRepository.cs",
               "RelativeToolTip": "FoodList.DAL\\Interfaces\\IBaseRepository.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAoAAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-22T15:09:01.132Z",
               "IsPinned": true,
@@ -92,13 +108,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 18,
               "Title": "FoodCulRepository.cs",
               "DocumentMoniker": "D:\\C# Programing\\Projects_On_ASP\\ListPetProj\\FoodList\\FoodList\\FoodList.DAL\\Repositories\\FoodCulRepository.cs",
               "RelativeDocumentMoniker": "FoodList.DAL\\Repositories\\FoodCulRepository.cs",
               "ToolTip": "D:\\C# Programing\\Projects_On_ASP\\ListPetProj\\FoodList\\FoodList\\FoodList.DAL\\Repositories\\FoodCulRepository.cs",
               "RelativeToolTip": "FoodList.DAL\\Repositories\\FoodCulRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-22T16:59:59.715Z",
               "IsPinned": true,
@@ -106,13 +122,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 17,
               "Title": "ProductsForDayRepository.cs",
               "DocumentMoniker": "D:\\C# Programing\\Projects_On_ASP\\ListPetProj\\FoodList\\FoodList\\FoodList.DAL\\Repositories\\ProductsForDayRepository.cs",
               "RelativeDocumentMoniker": "FoodList.DAL\\Repositories\\ProductsForDayRepository.cs",
               "ToolTip": "D:\\C# Programing\\Projects_On_ASP\\ListPetProj\\FoodList\\FoodList\\FoodList.DAL\\Repositories\\ProductsForDayRepository.cs",
               "RelativeToolTip": "FoodList.DAL\\Repositories\\ProductsForDayRepository.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-24T14:13:57.585Z",
               "IsPinned": true,
@@ -120,26 +136,27 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "D:\\C# Programing\\Projects_On_ASP\\ListPetProj\\FoodList\\FoodList\\FoodList.DAL\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "FoodList.DAL\\ApplicationDbContext.cs",
               "ToolTip": "D:\\C# Programing\\Projects_On_ASP\\ListPetProj\\FoodList\\FoodList\\FoodList.DAL\\ApplicationDbContext.cs",
               "RelativeToolTip": "FoodList.DAL\\ApplicationDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-22T15:11:01.597Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 15,
               "Title": "FoodCulEntity.cs",
               "DocumentMoniker": "D:\\C# Programing\\Projects_On_ASP\\ListPetProj\\FoodList\\FoodList\\FoodList.Domain\\Entity\\FoodCulEntity.cs",
               "RelativeDocumentMoniker": "FoodList.Domain\\Entity\\FoodCulEntity.cs",
               "ToolTip": "D:\\C# Programing\\Projects_On_ASP\\ListPetProj\\FoodList\\FoodList\\FoodList.Domain\\Entity\\FoodCulEntity.cs",
               "RelativeToolTip": "FoodList.Domain\\Entity\\FoodCulEntity.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAABAAAAArAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAuwA4AAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-22T15:45:56.236Z",
               "IsPinned": true,
@@ -147,13 +164,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 14,
               "Title": "ProductsForDayEntity.cs",
               "DocumentMoniker": "D:\\C# Programing\\Projects_On_ASP\\ListPetProj\\FoodList\\FoodList\\FoodList.Domain\\Entity\\ProductsForDayEntity.cs",
               "RelativeDocumentMoniker": "FoodList.Domain\\Entity\\ProductsForDayEntity.cs",
               "ToolTip": "D:\\C# Programing\\Projects_On_ASP\\ListPetProj\\FoodList\\FoodList\\FoodList.Domain\\Entity\\ProductsForDayEntity.cs",
               "RelativeToolTip": "FoodList.Domain\\Entity\\ProductsForDayEntity.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAAwAwAAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-24T14:05:19.232Z",
               "IsPinned": true,
@@ -161,13 +178,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 13,
               "Title": "Categories.cs",
               "DocumentMoniker": "D:\\C# Programing\\Projects_On_ASP\\ListPetProj\\FoodList\\FoodList\\FoodList.Domain\\Enum\\Categories.cs",
               "RelativeDocumentMoniker": "FoodList.Domain\\Enum\\Categories.cs",
               "ToolTip": "D:\\C# Programing\\Projects_On_ASP\\ListPetProj\\FoodList\\FoodList\\FoodList.Domain\\Enum\\Categories.cs",
               "RelativeToolTip": "FoodList.Domain\\Enum\\Categories.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABIAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-22T15:57:00.284Z",
               "IsPinned": true,
@@ -175,7 +192,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 12,
               "Title": "StatusCode.cs",
               "DocumentMoniker": "D:\\C# Programing\\Projects_On_ASP\\ListPetProj\\FoodList\\FoodList\\FoodList.Domain\\Enum\\StatusCode.cs",
               "RelativeDocumentMoniker": "FoodList.Domain\\Enum\\StatusCode.cs",
@@ -184,17 +201,18 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-23T13:38:11.4Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "BaseResponse.cs",
               "DocumentMoniker": "D:\\C# Programing\\Projects_On_ASP\\ListPetProj\\FoodList\\FoodList\\FoodList.Domain\\Response\\BaseResponse.cs",
               "RelativeDocumentMoniker": "FoodList.Domain\\Response\\BaseResponse.cs",
               "ToolTip": "D:\\C# Programing\\Projects_On_ASP\\ListPetProj\\FoodList\\FoodList\\FoodList.Domain\\Response\\BaseResponse.cs",
               "RelativeToolTip": "FoodList.Domain\\Response\\BaseResponse.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAmwBkAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwBEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-23T13:37:11.947Z",
               "IsPinned": true,
@@ -202,13 +220,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 10,
               "Title": "CreateProductViewModels.cs",
               "DocumentMoniker": "D:\\C# Programing\\Projects_On_ASP\\ListPetProj\\FoodList\\FoodList\\FoodList.Domain\\ViewModels\\FoodCul\\CreateProductViewModels.cs",
               "RelativeDocumentMoniker": "FoodList.Domain\\ViewModels\\FoodCul\\CreateProductViewModels.cs",
               "ToolTip": "D:\\C# Programing\\Projects_On_ASP\\ListPetProj\\FoodList\\FoodList\\FoodList.Domain\\ViewModels\\FoodCul\\CreateProductViewModels.cs",
               "RelativeToolTip": "FoodList.Domain\\ViewModels\\FoodCul\\CreateProductViewModels.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAABYAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAA8AAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-23T13:43:44.655Z",
               "IsPinned": true,
@@ -216,13 +234,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 9,
               "Title": "AddProductForDayViewModels.cs",
               "DocumentMoniker": "D:\\C# Programing\\Projects_On_ASP\\ListPetProj\\FoodList\\FoodList\\FoodList.Domain\\ViewModels\\FoodCul\\AddProductForDayViewModels.cs",
               "RelativeDocumentMoniker": "FoodList.Domain\\ViewModels\\FoodCul\\AddProductForDayViewModels.cs",
-              "ToolTip": "D:\\C# Programing\\Projects_On_ASP\\ListPetProj\\FoodList\\FoodList\\FoodList.Domain\\ViewModels\\FoodCul\\AddProductForDayViewModels.cs*",
-              "RelativeToolTip": "FoodList.Domain\\ViewModels\\FoodCul\\AddProductForDayViewModels.cs*",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "ToolTip": "D:\\C# Programing\\Projects_On_ASP\\ListPetProj\\FoodList\\FoodList\\FoodList.Domain\\ViewModels\\FoodCul\\AddProductForDayViewModels.cs",
+              "RelativeToolTip": "FoodList.Domain\\ViewModels\\FoodCul\\AddProductForDayViewModels.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-24T14:51:01.547Z",
               "IsPinned": true,
@@ -230,13 +248,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 8,
               "Title": "IFoodCulSerivce.cs",
               "DocumentMoniker": "D:\\C# Programing\\Projects_On_ASP\\ListPetProj\\FoodList\\FoodList\\FoodListSerivce\\Interfaces\\IFoodCulSerivce.cs",
               "RelativeDocumentMoniker": "FoodListSerivce\\Interfaces\\IFoodCulSerivce.cs",
               "ToolTip": "D:\\C# Programing\\Projects_On_ASP\\ListPetProj\\FoodList\\FoodList\\FoodListSerivce\\Interfaces\\IFoodCulSerivce.cs",
               "RelativeToolTip": "FoodListSerivce\\Interfaces\\IFoodCulSerivce.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-23T13:35:14.236Z",
               "IsPinned": true,
@@ -244,13 +262,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
               "Title": "FoodCulSerivce.cs",
               "DocumentMoniker": "D:\\C# Programing\\Projects_On_ASP\\ListPetProj\\FoodList\\FoodList\\FoodListSerivce\\Implementations\\FoodCulSerivce.cs",
               "RelativeDocumentMoniker": "FoodListSerivce\\Implementations\\FoodCulSerivce.cs",
-              "ToolTip": "D:\\C# Programing\\Projects_On_ASP\\ListPetProj\\FoodList\\FoodList\\FoodListSerivce\\Implementations\\FoodCulSerivce.cs*",
-              "RelativeToolTip": "FoodListSerivce\\Implementations\\FoodCulSerivce.cs*",
-              "ViewState": "AgIAABsAAAAAAAAAAAAuwCAAAAAJAAAAAAAAAA==",
+              "ToolTip": "D:\\C# Programing\\Projects_On_ASP\\ListPetProj\\FoodList\\FoodList\\FoodListSerivce\\Implementations\\FoodCulSerivce.cs",
+              "RelativeToolTip": "FoodListSerivce\\Implementations\\FoodCulSerivce.cs",
+              "ViewState": "AgIAAMgAAAAAAAAAAAAgwM8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-23T13:50:10.445Z",
               "IsPinned": true,
@@ -258,15 +276,29 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "FoodCulController.cs",
               "DocumentMoniker": "D:\\C# Programing\\Projects_On_ASP\\ListPetProj\\FoodList\\FoodList\\FoodList\\Controllers\\FoodCulController.cs",
               "RelativeDocumentMoniker": "FoodList\\Controllers\\FoodCulController.cs",
               "ToolTip": "D:\\C# Programing\\Projects_On_ASP\\ListPetProj\\FoodList\\FoodList\\FoodList\\Controllers\\FoodCulController.cs",
               "RelativeToolTip": "FoodList\\Controllers\\FoodCulController.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAgwDIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAIsAAAAAAAAAAADwv9UAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-23T14:31:42.103Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Result.cshtml",
+              "DocumentMoniker": "D:\\C# Programing\\Projects_On_ASP\\ListPetProj\\FoodList\\FoodList\\FoodList\\Views\\FoodCul\\Result.cshtml",
+              "RelativeDocumentMoniker": "FoodList\\Views\\FoodCul\\Result.cshtml",
+              "ToolTip": "D:\\C# Programing\\Projects_On_ASP\\ListPetProj\\FoodList\\FoodList\\FoodList\\Views\\FoodCul\\Result.cshtml",
+              "RelativeToolTip": "FoodList\\Views\\FoodCul\\Result.cshtml",
+              "ViewState": "AgIAAMEAAAAAAAAAAIAwwNwAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-24T17:20:45.021Z",
               "IsPinned": true,
               "EditorCaption": ""
             },
@@ -280,26 +312,65 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Result.cshtml",
-              "DocumentMoniker": "D:\\C# Programing\\Projects_On_ASP\\ListPetProj\\FoodList\\FoodList\\FoodList\\Views\\FoodCul\\Result.cshtml",
-              "RelativeDocumentMoniker": "FoodList\\Views\\FoodCul\\Result.cshtml",
-              "ToolTip": "D:\\C# Programing\\Projects_On_ASP\\ListPetProj\\FoodList\\FoodList\\FoodList\\Views\\FoodCul\\Result.cshtml",
-              "RelativeToolTip": "FoodList\\Views\\FoodCul\\Result.cshtml",
-              "ViewState": "AgIAAI0AAAAAAAAAAAAAAJUAAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-24T17:20:45.021Z",
+              "DocumentIndex": 4,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\C# Programing\\Projects_On_ASP\\ListPetProj\\FoodList\\FoodList\\FoodList\\appsettings.json",
+              "RelativeDocumentMoniker": "FoodList\\appsettings.json",
+              "ToolTip": "D:\\C# Programing\\Projects_On_ASP\\ListPetProj\\FoodList\\FoodList\\FoodList\\appsettings.json",
+              "RelativeToolTip": "FoodList\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-04T11:36:46.935Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\C# Programing\\Projects_On_ASP\\ListPetProj\\FoodList\\FoodList\\FoodList\\Program.cs",
+              "RelativeDocumentMoniker": "FoodList\\Program.cs",
+              "ToolTip": "D:\\C# Programing\\Projects_On_ASP\\ListPetProj\\FoodList\\FoodList\\FoodList\\Program.cs",
+              "RelativeToolTip": "FoodList\\Program.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAAB8AAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-28T12:35:05.009Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Deleting.cshtml",
+              "DocumentMoniker": "D:\\C# Programing\\Projects_On_ASP\\ListPetProj\\FoodList\\FoodList\\FoodList\\Views\\FoodCul\\Deleting.cshtml",
+              "RelativeDocumentMoniker": "FoodList\\Views\\FoodCul\\Deleting.cshtml",
+              "ToolTip": "D:\\C# Programing\\Projects_On_ASP\\ListPetProj\\FoodList\\FoodList\\FoodList\\Views\\FoodCul\\Deleting.cshtml",
+              "RelativeToolTip": "FoodList\\Views\\FoodCul\\Deleting.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAIAwwFUAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-25T17:52:03.245Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Crafting.cshtml",
+              "DocumentMoniker": "D:\\C# Programing\\Projects_On_ASP\\ListPetProj\\FoodList\\FoodList\\FoodList\\Views\\FoodCul\\Crafting.cshtml",
+              "RelativeDocumentMoniker": "FoodList\\Views\\FoodCul\\Crafting.cshtml",
+              "ToolTip": "D:\\C# Programing\\Projects_On_ASP\\ListPetProj\\FoodList\\FoodList\\FoodList\\Views\\FoodCul\\Crafting.cshtml",
+              "RelativeToolTip": "FoodList\\Views\\FoodCul\\Crafting.cshtml",
+              "ViewState": "AgIAAJwAAAAAAAAAAAAAADIAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-25T13:42:50.834Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "D:\\C# Programing\\Projects_On_ASP\\ListPetProj\\FoodList\\FoodList\\FoodList\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "FoodList\\Views\\Shared\\_Layout.cshtml",
               "ToolTip": "D:\\C# Programing\\Projects_On_ASP\\ListPetProj\\FoodList\\FoodList\\FoodList\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "FoodList\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAGkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAAoAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-02-22T17:53:28.552Z",
               "EditorCaption": ""

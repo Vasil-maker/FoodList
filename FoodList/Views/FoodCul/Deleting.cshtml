@@ -1,0 +1,114 @@
+﻿@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Удаление продукта";
+}
+
+<style>
+    .product-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+    }
+
+        .product-table th, .product-table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+
+        .product-table th {
+            background-color: #f2f2f2;
+        }
+
+        .product-table tr:hover {
+            background-color: #f5f5f5;
+        }
+
+    .delete-btn {
+        padding: 10px 20px;
+        background-color: #ff4d4d;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+        .delete-btn:hover {
+            background-color: #ff1a1a;
+        }
+</style>
+
+<div class="container">
+    <h1>Удаление продукта</h1>
+
+    <!-- Таблица с продуктами -->
+    <table class="product-table">
+        <thead>
+            <tr>
+                <th>Выбрать</th>
+                <th>Название</th>
+                <th>Калории (на 100 г)</th>
+                <th>Белки (на 100 г)</th>
+                <th>Жиры (на 100 г)</th>
+                <th>Углеводы (на 100 г)</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var product in ViewBag.Products)
+            {
+                <tr>
+                    <td><input type="checkbox" class="product-checkbox" data-id="@product.ID"></td>
+                    <td>@product.Name</td>
+                    <td>@product.Calories</td>
+                    <td>@product.Protein</td>
+                    <td>@product.Fats</td>
+                    <td>@product.Carbohydrates</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <!-- Кнопка удаления -->
+    <button id="delete-product-btn" class="delete-btn">Удалить выбранные продукты</button>
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const deleteBtn = document.getElementById("delete-product-btn");
+
+        // Обработчик нажатия на кнопку удаления
+        deleteBtn.addEventListener("click", async function () {
+            const selectedProducts = document.querySelectorAll(".product-checkbox:checked");
+
+            if (selectedProducts.length === 0) {
+                alert("Выберите хотя бы один продукт для удаления!");
+                return;
+            }
+
+            // Собираем ID выбранных продуктов
+            const productIds = Array.from(selectedProducts).map(checkbox => checkbox.dataset.id);
+
+            try {
+                // Отправляем запрос на удаление
+                const response = await fetch("/FoodCul/DeleteProducts", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify(productIds)
+                });
+
+                const result = await response.json();
+                if (result.statusCode === 0) {
+                    alert(result.description);
+                    window.location.reload(); // Обновляем страницу
+                } else {
+                    alert(result.description);
+                }
+            } catch (error) {
+                console.error("Ошибка при удалении продуктов:", error);
+                alert("Произошла ошибка при удалении продуктов.");
+            }
+        });
+    });
+</script>

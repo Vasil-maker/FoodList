@@ -16,7 +16,11 @@ namespace FoodListSerivce.Interfaces
         Task<IBaseResponse<ProductsForDayEntity>> AddProdDay(AddProductForDayViewModels model);
         Task<IBaseResponse<IEnumerable<FoodCulEntity>>> GetAllProducts();
 
+        Task<IBaseResponse<IEnumerable<ProductsForDayEntity>>> GetProductsForDay(DateTime data);
 
+        Task<IBaseResponse<FoodCulEntity>> CreateCombinedProduct(CreateProductViewModels model);
+
+        Task<IBaseResponse<bool>> DeleteProduct(long id);
 
     }
 }

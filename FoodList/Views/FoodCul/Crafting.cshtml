@@ -1,7 +1,195 @@
-﻿
-@{
-    ViewData["Title"] = "Crafting";
+﻿@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Создание нового продукта";
 }
 
+<style>
+    .product-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+    }
 
+        .product-table th, .product-table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
 
+        .product-table th {
+            background-color: #f2f2f2;
+        }
+
+        .product-table tr:hover {
+            background-color: #f5f5f5;
+        }
+
+    .weight-input {
+        width: 80px;
+        padding: 5px;
+        text-align: center;
+    }
+
+    .total-row {
+        font-weight: bold;
+        background-color: #e0f7fa;
+        padding: 10px;
+        margin-bottom: 20px;
+        border-radius: 4px;
+        text-align: center;
+    }
+
+    .create-product-form {
+        margin-bottom: 20px;
+        padding: 20px;
+        border: 1px solid #ddd;
+        background-color: #f9f9f9;
+        border-radius: 4px;
+    }
+
+        .create-product-form input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        .create-product-form button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+            .create-product-form button:hover {
+                background-color: #45a049;
+            }
+</style>
+
+<div class="container">
+    <h1>Создание нового продукта</h1>
+
+    <!-- Итоговые значения -->
+    <div class="total-row">
+        <strong>Итого:</strong>
+        Калории: <span id="total-calories">0</span>,
+        Белки: <span id="total-protein">0</span>,
+        Жиры: <span id="total-fats">0</span>,
+        Углеводы: <span id="total-carbs">0</span>
+    </div>
+
+    <!-- Форма для создания нового продукта -->
+    <div class="create-product-form">
+        <input type="text" id="new-product-name" placeholder="Название нового продукта">
+        <button id="create-product-btn">Создать продукт</button>
+    </div>
+
+    <!-- Таблица с продуктами -->
+    <table class="product-table">
+        <thead>
+            <tr>
+                <th>Название</th>
+                <th>Калории (на 100 г)</th>
+                <th>Белки (на 100 г)</th>
+                <th>Жиры (на 100 г)</th>
+                <th>Углеводы (на 100 г)</th>
+                <th>Вес (г)</th>
+                <th>Выбрать</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var product in ViewBag.Products)
+            {
+                <tr>
+                    <td>@product.Name</td>
+                    <td>@product.Calories</td>
+                    <td>@product.Protein</td>
+                    <td>@product.Fats</td>
+                    <td>@product.Carbohydrates</td>
+                    <td><input type="number" class="weight-input" data-calories="@product.Calories" data-protein="@product.Protein" data-fats="@product.Fats" data-carbs="@product.Carbohydrates" min="0" value="0"></td>
+                    <td><input type="checkbox" class="product-checkbox"></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const weightInputs = document.querySelectorAll(".weight-input");
+        const checkboxes = document.querySelectorAll(".product-checkbox");
+        const totalCalories = document.getElementById("total-calories");
+        const totalProtein = document.getElementById("total-protein");
+        const totalFats = document.getElementById("total-fats");
+        const totalCarbs = document.getElementById("total-carbs");
+        const createProductBtn = document.getElementById("create-product-btn");
+        const newProductNameInput = document.getElementById("new-product-name");
+
+        // Функция для пересчета итоговых значений
+        function calculateTotals() {
+            let totalCal = 0, totalProt = 0, totalFat = 0, totalCarb = 0;
+
+            weightInputs.forEach((input, index) => {
+                if (checkboxes[index].checked) {
+                    const weight = parseFloat(input.value) || 0;
+                    const factor = weight / 100;
+                    totalCal += parseFloat(input.dataset.calories) * factor;
+                    totalProt += parseFloat(input.dataset.protein) * factor;
+                    totalFat += parseFloat(input.dataset.fats) * factor;
+                    totalCarb += parseFloat(input.dataset.carbs) * factor;
+                }
+            });
+
+            totalCalories.textContent = totalCal.toFixed(2);
+            totalProtein.textContent = totalProt.toFixed(2);
+            totalFats.textContent = totalFat.toFixed(2);
+            totalCarbs.textContent = totalCarb.toFixed(2);
+        }
+
+        // Слушатели событий
+        weightInputs.forEach(input => input.addEventListener("input", calculateTotals));
+        checkboxes.forEach(checkbox => checkbox.addEventListener("change", calculateTotals));
+
+        // Создание нового продукта
+        createProductBtn.addEventListener("click", async function () {
+            const name = newProductNameInput.value.trim();
+            if (!name) {
+                alert("Введите название продукта!");
+                return;
+            }
+
+            const productData = {
+                Name: name,
+                Calories: parseFloat(totalCalories.textContent),
+                Protein: parseFloat(totalProtein.textContent),
+                Fats: parseFloat(totalFats.textContent),
+                Carbohydrates: parseFloat(totalCarbs.textContent),
+                Category: 8 // Указываем индекс категории "Комбинированный"
+            };
+
+            try {
+                const response = await fetch("/FoodCul/CreateCombinedProduct", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify(productData)
+                });
+
+                const result = await response.json();
+                if (result.statusCode === 0) {
+                    alert(result.description);
+                    window.location.reload(); // Обновляем страницу
+                } else {
+                    alert(result.description);
+                }
+            } catch (error) {
+                console.error("Ошибка при отправке данных:", error);
+                alert("Произошла ошибка при создании продукта.");
+            }
+        });
+    });
+</script>
